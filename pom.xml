@@ -1388,6 +1388,7 @@
                         <exclude>**/*jmhTest*.java</exclude>
                         <exclude>**/*jmhType*.java</exclude>
                     </excludes>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
         </plugins>
