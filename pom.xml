@@ -1377,7 +1377,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <argLine>-Dappmap.output.directory=${session.executionRootDirectory}/tmp/appmap -javaagent:${session.executionRootDirectory}/appmap.jar</argLine>
+                    <argLine>-Dappmap.output.directory=${session.executionRootDirectory}/tmp/appmap -javaagent:${session.executionRootDirectory}/appmap.jar -Dappmap.config.file=${session.executionRootDirectory}/appmap.yml</argLine>
                     <includes>
                         <!-- Tests classes should start with "Test", but we do also want to include tests incorrectly named, with "Test" at the end -->
                         <include>**/Test*.java</include>
