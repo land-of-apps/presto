@@ -1,0 +1,84 @@
+# Turn on validation, so we can use import:
+version: ~> 1.0
+
+jdk:
+- openjdk11
+import: land-of-apps/land-of-apps:travis/java-imports.yml
+
+install: skip
+script:
+  - travis_wait mvn clean test
+#  - travis_wait mvn test -pl presto-accumulo
+#  - travis_wait mvn test -pl presto-accumulo-iterators
+#  - travis_wait mvn test -pl presto-array
+#  - travis_wait mvn test -pl presto-atop
+#  - travis_wait mvn test -pl presto-base-jdbc
+#  - travis_wait mvn test -pl presto-benchmark
+#  - travis_wait mvn test -pl presto-benchmark-driver
+#  - travis_wait mvn test -pl presto-benchto-benchmarks
+#  - travis_wait mvn test -pl presto-bigquery
+#  - travis_wait mvn test -pl presto-blackhole
+#  - travis_wait mvn test -pl presto-cassandra
+#  - travis_wait mvn test -pl presto-cli
+#  - travis_wait mvn test -pl presto-client
+#  - travis_wait mvn test -pl presto-docs
+#  - travis_wait mvn test -pl presto-druid
+#  - travis_wait mvn test -pl presto-elasticsearch
+#  - travis_wait mvn test -pl presto-example-http
+#  - travis_wait mvn test -pl presto-geospatial
+#  - travis_wait mvn test -pl presto-geospatial-toolkit
+#  - travis_wait mvn test -pl presto-google-sheets
+#  - travis_wait mvn test -pl presto-hive
+#  - travis_wait mvn test -pl presto-hive-hadoop2
+#  - travis_wait mvn test -pl presto-iceberg
+#  - travis_wait mvn test -pl presto-jdbc
+#  - travis_wait mvn test -pl presto-jmx
+#  - travis_wait mvn test -pl presto-kafka
+#  - travis_wait mvn test -pl presto-kinesis
+#  - travis_wait mvn test -pl presto-kudu
+#  - travis_wait mvn test -pl presto-local-file
+#  - travis_wait mvn test -pl presto-main
+#  - travis_wait mvn test -pl presto-matching
+#  - travis_wait mvn test -pl presto-memory
+#  - travis_wait mvn test -pl presto-memory-context
+#  - travis_wait mvn test -pl presto-memsql
+#  - travis_wait mvn test -pl presto-ml
+#  - travis_wait mvn test -pl presto-mongodb
+#  - travis_wait mvn test -pl presto-mysql
+#  - travis_wait mvn test -pl presto-oracle
+#  - travis_wait mvn test -pl presto-orc
+#  - travis_wait mvn test -pl presto-parquet
+#  - travis_wait mvn test -pl presto-parser
+#  - travis_wait mvn test -pl presto-password-authenticators
+#  - travis_wait mvn test -pl presto-phoenix
+#  - travis_wait mvn test -pl presto-pinot
+#  - travis_wait mvn test -pl presto-plugin-toolkit
+#  - travis_wait mvn test -pl presto-postgresql
+#  - travis_wait mvn test -pl presto-product-tests
+#  - travis_wait mvn test -pl presto-product-tests-launcher
+#  - travis_wait mvn test -pl presto-prometheus
+#  - travis_wait mvn test -pl presto-proxy
+#  - travis_wait mvn test -pl presto-raptor-legacy
+#  - travis_wait mvn test -pl presto-rcfile
+#  - travis_wait mvn test -pl presto-record-decoder
+#  - travis_wait mvn test -pl presto-redis
+#  - travis_wait mvn test -pl presto-redshift
+#  - travis_wait mvn test -pl presto-resource-group-managers
+#  - travis_wait mvn test -pl presto-root
+#  - travis_wait mvn test -pl presto-server
+#  - travis_wait mvn test -pl presto-server-main
+#  - travis_wait mvn test -pl presto-server-rpm
+#  - travis_wait mvn test -pl presto-session-property-managers
+#  - travis_wait mvn test -pl presto-spi
+#  - travis_wait mvn test -pl presto-sqlserver
+#  - travis_wait mvn test -pl presto-teradata-functions
+#  - travis_wait mvn test -pl presto-test-jdbc-compatibility
+#  - travis_wait mvn test -pl presto-testing
+#  - travis_wait mvn test -pl presto-testing-server-launcher
+#  - travis_wait mvn test -pl presto-tests
+#  - travis_wait mvn test -pl presto-thrift
+#  - travis_wait mvn test -pl presto-thrift-api
+#  - travis_wait mvn test -pl presto-thrift-testing-server
+#  - travis_wait mvn test -pl presto-tpcds
+#  - travis_wait mvn test -pl presto-tpch
+#  - travis_wait mvn test -pl presto-verifier
