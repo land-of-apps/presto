@@ -7,7 +7,7 @@ import: land-of-apps/land-of-apps:travis/java-imports.yml
 
 install: skip
 script:
-  - travis_wait mvn clean test -X
+  - travis_wait mvn clean test
 #  - travis_wait mvn test -pl presto-accumulo
 #  - travis_wait mvn test -pl presto-accumulo-iterators
 #  - travis_wait mvn test -pl presto-array
